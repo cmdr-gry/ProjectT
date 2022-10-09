@@ -1,0 +1,31 @@
+next time
+
+I should keep trying to find necromancer githubs if I could find better one
+I should do a git commit
+Put something on smart contract and attach it to project file
+
+Plan on how smart contract would interact with necromancer game, whats benefit for user?
+What makes the game fun? etc.
+
+I planned to have ziggurats which can be purchased if you have enough brains in the game. 
+A new ziggurat would open up a new zone where the necromancer can go to infect humans.
+Ziggurats would be the highscore for the necromancers and towers of control over the
+zones.
+
+New necromancers would start with 0 ziggurats, having to infect humans in smaller
+villages. Ziggurats give access to control larger towns and cities. These ziggurats could be sold
+for crypto or bought. Making the game P2E. 
+
+The smart contract would be used to maintain record of highscores, to let users buy Ziggurats and transfer them
+to other users. The game is developed by my company Tseppelin to separate website. 
+
+I will need the working table to focus on making this game at home. I am getting
+constantly distracted and that is a big problem for development.
+
+Meanwhile, I can do the more minor tasks which dont demand too much time. 
+---------------
+for next time I could try to get this game work on a separate page on Tseppelin.io as a test, then remove it later from there.
+I could also study the integration of brains in to a smart contract through web wallet interface.
+Looking at the map of the game would be good too.
+I need to push some web-related thing on the Github next time. Probably the main game page, 
+but with web3 wallet bones if I am able to?
