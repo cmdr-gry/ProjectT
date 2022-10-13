@@ -24,8 +24,7 @@ constantly distracted and that is a big problem for development.
 
 Meanwhile, I can do the more minor tasks which dont demand too much time. 
 ---------------
-for next time I could try to get this game work on a separate page on Tseppelin.io as a test, then remove it later from there.
-I could also study the integration of brains in to a smart contract through web wallet interface.
-Looking at the map of the game would be good too.
-I need to push some web-related thing on the Github next time. Probably the main game page, 
-but with web3 wallet bones if I am able to?
+I need to look at the game template structure deeper
+I need to learn a little bit of Svelte
+I should try to wake up 1 hour earlier next time
+I should try to make some basic necromancer/zombie game frames
