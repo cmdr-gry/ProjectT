@@ -14,5 +14,15 @@
 </head>
 
 <body>
+	<div class="start-game" ng-if="zm.model.currentState == zm.model.states.startGame">
+		<h2>Project T</h2>
+		<h4>Take control of a horde of zombies to spread virus</h4>
+		<ul>
+		  <!----><li ng-repeat="text in zm.howToPlay">Energy refills over time. You need 10 energy to spawn a zombie by clicking on the ground.</li><!----><li ng-repeat="text in zm.howToPlay">Hold shift or control to spawn multiple zombies with a single click.</li><!----><li ng-repeat="text in zm.howToPlay">Whenever one of your zombies attacks a human you will collect some blood.</li><!----><li ng-repeat="text in zm.howToPlay">Killing a human or turning them into a zombie will earn you 1 brain.</li><!----><li ng-repeat="text in zm.howToPlay">You can spend these currencies in the shop to purchase upgrades for your zombie horde.</li><!----><li ng-repeat="text in zm.howToPlay">Hold shift to buy the maximum affordable number of upgrades.</li><!----><li ng-repeat="text in zm.howToPlay">The world can be dragged with the mouse to explore it. Or by using the WASD or arrow keys.</li><!----><li ng-repeat="text in zm.howToPlay">You can zoom in and out using your mouse wheel. Pinch to zoom on mobile.</li><!---->
+		</ul>
+		<a href="https://discord.gg/TxPyNDh" target="_blank">Join the Discord - </a>
+		<!---->
+		<button ng-click="zm.startGame();">Start Level 1</button>
+	  </div>
 </body>
 </html>
