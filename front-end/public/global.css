@@ -74,3 +74,40 @@ button:hover {
 button:disabled {
 	color: #999;
 }
+div.start-game, div.end-level, div.level-select {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  z-index: 150;
+  transform:translate(-50%,-50%);
+  padding:1rem;
+  background-color: rgb(10,40,45);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: inset 0 0 15px rgb(5,20,20);
+  max-height: 90%;
+}
+
+div.start-game, div.end-level {
+  overflow-y: auto;
+}
+div.start-game h2, div.start-game h3, div.start-game h4 {
+  margin:0.5rem 1rem;
+}
+div.start-game a {
+  display: block;
+  color:mediumseagreen;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+} 
+div.start-game a:hover {
+  color:#8c8;
+}
+div.level-select.scroll { 
+  overflow: auto;
+}
+div.start-game ul > li {
+  text-align: left;
+  line-height: 26px;
+}
