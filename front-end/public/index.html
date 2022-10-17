@@ -13,7 +13,9 @@
 	<script defer src='build/bundle.js'></script>
 </head>
 
-<body>
+<body ng-controller="ZombieCotnroller as zm">
+	
+
 	<div class="start-game" ng-if="zm.model.currentState == zm.model.states.startGame">
 		<h2>Project T</h2>
 		<h4>Take control of a horde of zombies to spread virus</h4>
