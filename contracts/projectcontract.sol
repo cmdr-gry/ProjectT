@@ -6,12 +6,12 @@ contract projectcontract is Ownable {
 
 mapping(address => uint256) ziggurats;
 
-   uint32 constant private zigguratCost = 1;
+   uint32 constant private zigguratCost = 1000;
    uint16 constant private newZiggurat = 1;
    mapping(address => uint256) storedbrains;
 
    function devcreateZiggurat() public onlyOwner {
-      ziggurats[msg.sender] += newChamber;
+      ziggurats[msg.sender] += newZiggurat;
    }
 
       function buyZiggurat(uint256 quantity) public {
@@ -22,6 +22,22 @@ mapping(address => uint256) ziggurats;
       ziggurats[msg.sender] += quantity;
 
    }
+ // check functions here to check how many ziggurats or brains one has
+
+      function checkBrains() public view returns (uint256) {
+      return storedbrains[msg.sender];
+
+   }
+
+   function checkZiggurats() public view returns (uint256) {
+      return ziggurats[msg.sender];
+
+   }
+
+// function to transfer X brains from program to smart contract externally - need to research this a bit
+
+   //function transferBrainsInside()
+
 
 
 }
