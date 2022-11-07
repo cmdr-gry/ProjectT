@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/cmdr-gry/ProjectT/issues"
   },
-  "homepage": "https://github.com/cmdr-gry/ProjectT#readme"
+  "homepage": "https://github.com/cmdr-gry/ProjectT#readme",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.1.1"
+  }
 }
