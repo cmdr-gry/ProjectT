@@ -2,7 +2,7 @@ pragma solidity 0.8.17;
 
 import "./IERC1155.sol";
 
-contract Marketplace {
+contract marketplace {
 
     IERC1155 private _token;
 
