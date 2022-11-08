@@ -2,22 +2,22 @@ const marketplace = artifacts.require("marketplace");
 const token = artifacts.require("token");
 
 module.exports = (deployer, _network, [owner]) => deployer
-  .then(async() => await createToken1())
-  .then(async() => await createToken2())
-  .then(async() => await createToken3())
-  .then(async() => await mintTokens());
+  .then(() => createToken1())
+  .then(() => createToken2())
+  .then(() => createToken3())
+  .then(() => mintTokens());
 
 async function createToken1(){
-  (await token.deployed()).create(0, "");
+  (await token.deployed()).create(60, "");
 }
 
 async function createToken2(){
-  (await token.deployed()).create(0, "");
+  (await token.deployed()).create(40, "");
 
 }
 
 async function createToken3(){
-  (await token.deployed()).create(0, "");
+  (await token.deployed()).create(20, "");
 }
 function mintTokens(){
   token.deployed().then(instance => {
