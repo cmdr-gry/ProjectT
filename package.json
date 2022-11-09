@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/cmdr-gry/ProjectT#readme",
   "dependencies": {
-    "@truffle/hdwallet-provider": "^2.1.1"
+    "@truffle/hdwallet-provider": "^2.1.1",
+    "web3": "^1.8.0"
   }
 }
