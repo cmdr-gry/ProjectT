@@ -18404,7 +18404,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-11-08T17:39:12.042Z",
+  "updatedAt": "2022-11-12T05:11:58.974Z",
   "devdoc": {
     "details": "Mintable form of ERC1155 Shows how easy it is to mint new items.",
     "kind": "dev",

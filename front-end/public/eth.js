@@ -520,8 +520,8 @@ var tokenAbi = [
     }
   ];
 
-  var token = new web3.eth.Contract(tokenAbi, "0x1544311B02eA63674c6E70975c7736f7Ee915b7a");
-  var marketplace = new web3.eth.Contract(marketplaceAbi, "0xf2e1a2a5E5431c7c56046A98f5068025a376f804");
+  var token = new web3.eth.Contract(tokenAbi, "0xd1B614d468be561c20f60cCa2d8c38820025Da65");
+  var marketplace = new web3.eth.Contract(marketplaceAbi, "0x102b0f41e92df343255e83c94B064287706eCb7B");
 
   function getUserItems(){
     web3.eth.getAccounts().then(accountArray => {
@@ -561,9 +561,11 @@ var tokenAbi = [
       .on('receipt', receipt => {
         alert("Transaction Complete");
       })
-    });
+    });  // test tomorrow if transaction shows up on ganache
 
   }
+
+  // then add the code in notepad
 
 
 
