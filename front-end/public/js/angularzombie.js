@@ -546,14 +546,11 @@ angular.module('zombieApp', [])
     } 
 
     zm.howToPlay = [
-      "Energy refills over time. You need 10 energy to spawn a zombie by clicking on the ground.",
-      "Hold shift or control to spawn multiple zombies with a single click.",
-      "Whenever one of your zombies attacks a human you will collect some blood.",
-      "Killing a human or turning them into a zombie will earn you 1 brain.",
+            "You are a necromancer tasked with turning the planet in to underworld",
+      "Kill all humans or make them zombies. You will need to grow your horde of undead.",
+      "You are being watched by invisible overlord, don't fail badly or face consequences.",
+      "You need resources and corpses, how you go about getting them is up to your discretion.",
       "You can spend these currencies in the shop to purchase upgrades for your zombie horde.",
-      "Hold shift to buy the maximum affordable number of upgrades.",
-      "The world can be dragged with the mouse to explore it. Or by using the WASD or arrow keys.",
-      "You can zoom in and out using your mouse wheel. Pinch to zoom on mobile.",
     ];
 
     zm.updateMessages = function(timeDiff) {
