@@ -51,14 +51,14 @@
     <script src="js/angularzombie.js"></script>
     <script src="node_modules/web3/dist/web3.min.js"></script>
     <script src="eth.js"></script>
+    <script src="web3.min.js"></script>
     <link rel="stylesheet" type="text/css" href="zombiemancer.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
   </head>
   <body ng-controller="ZombieController as zm">
     <h1>Choose your upgrade</h1>
     <button onClick="buy(1)">Mint test token</button>
-    <button onClick="buy(2)">Removed</button>
-    <button onClick="buy(3)">Removed</button>
+
     
     <div class="message" ng-if="zm.message">
       <p>{{zm.message}}</p>
