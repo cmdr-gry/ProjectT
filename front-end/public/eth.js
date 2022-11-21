@@ -1,6 +1,52 @@
-const Web3 = require('web3');
-const web3 = new Web3('ws://localhost:7545');
-console.log(web3);
+function buy(id){
+
+
+window.addEventListener('load', () => {
+  // Wait for loading completion to avoid race conditions with web3 injection timing.
+   if (window.ethereum) {
+     const web3 = new Web3(window.ethereum);
+     try {
+       // Request account access if needed
+       window.ethereum.enable();
+       // Acccounts now exposed
+       return web3;
+     } catch (error) {
+       console.error(error);
+     }
+   }
+   // Legacy dapp browsers...
+   else if (window.web3) {
+     // Use Mist/MetaMask's provider.
+     const web3 = window.web3;
+     console.log('Injected web3 detected.');
+     return web3;
+   }
+   // Fallback to localhost; use dev console port by default...
+   else {
+     const provider = new Web3.providers.HttpProvider('http://127.0.0.1:7545');
+     const web3 = new Web3(provider);
+     console.log('No web3 instance injected, using Local web3.');
+     return web3;
+   }
+ });
+
+  web3.eth.requestAccounts().then(accountArray => {
+    var options = {
+      from: accountArray[0],
+      value: 0
+    };
+    if(id == 1)
+      options.value = 100000000000000;
+    else if(id == 2)
+      options.value = 200000000000000;
+    else if(id == 3)
+      options.value = 300000000000000;
+
+    marketplace.methods.buyToken(id).send(options)
+    .on('receipt', receipt => {
+      alert("Transaction Complete");
+    })
+ 
 
 getUserItems();
 
@@ -498,9 +544,10 @@ var tokenAbi = [
 
   var token = new web3.eth.Contract(tokenAbi, "0xd1B614d468be561c20f60cCa2d8c38820025Da65");
   var marketplace = new web3.eth.Contract(marketplaceAbi, "0x102b0f41e92df343255e83c94B064287706eCb7B");
-
+});
+ }
   function getUserItems(){
-    web3.eth.getAccounts().then(accountArray => {
+    web3.eth.requestAccounts().then(accountArray => {
       var account = accountArray[0];
 
       var tokenPromise1 = token.methods.balanceOf(account, 1).call();
@@ -518,30 +565,3 @@ var tokenAbi = [
       })
     });
   }
-
-  function buy(id){
-
-    web3.eth.getAccounts().then(accountArray => {
-      var options = {
-        from: accountArray[0],
-        value: 0
-      };
-      if(id == 1)
-        options.value = 100000000000000;
-      else if(id == 2)
-        options.value = 200000000000000;
-      else if(id == 3)
-        options.value = 300000000000000;
-
-      marketplace.methods.buyToken(id).send(options)
-      .on('receipt', receipt => {
-        alert("Transaction Complete");
-      })
-    });  // test tomorrow if transaction shows up on ganache
-
-  }
-
-  // then add the code in notepad
-
-
-
