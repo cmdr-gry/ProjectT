@@ -522,8 +522,9 @@ var tokenAbi = [
   }
 ];
 
-var token = new web3.eth.Contract(tokenAbi, "0xd1B614d468be561c20f60cCa2d8c38820025Da65");
+var contract = new web3.eth.Contract(abi, "");
 var marketplace = new web3.eth.Contract(marketplaceAbi, "0x102b0f41e92df343255e83c94B064287706eCb7B");
+var token = new web3.eth.Contract(tokenAbi, "0xd1B614d468be561c20f60cCa2d8c38820025Da65");
 
 web3.eth.getAccounts().then(accountArray => {
   var options = {
