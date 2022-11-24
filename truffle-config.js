@@ -23,9 +23,9 @@
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
-const HDWalletProvider = require('truffle-hdwallet-provider');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
 const infuraKey = "948ab44ef3974a02b2fb3755759706a4";
-const mnemonic = "diary post minute misery accuse coast boss various ivory aisle entire cruel manage couch fox among soldier rebuild answer tank region hockey use bless";
+const mnemonic = "business august shy coffee negative tourist mouse upset three field more purity";
 
 module.exports = {
   /**
