@@ -46,9 +46,12 @@ module.exports = {
     // options below to some value.
     //
      goerli: {
-      provider: () => new HDWalletProvider(mnemonic, `https://goerli.infura.io/v3/948ab44ef3974a02b2fb3755759706a4`),     // Localhost (default: none)
-      port: 7545,            // Standard Ethereum port (default: none)
-      network_id: 5       // Any network (default: none)
+      provider: () => {
+        return new HDWalletProvider(process.env.MNEMONIC, 'https://goerli.infura.io/v3/' + process.env.INFURA_API_KEY)     // Localhost (default: none)
+      },
+      network_id: '5', // eslint-disable-line camelcase
+      gas: 4465030,
+      gasPrice: 10000000000,
     },
     // Another network with more advanced options...
     // advanced: {
