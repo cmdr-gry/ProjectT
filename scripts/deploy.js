@@ -7,8 +7,11 @@ async function main() {
 
   const token = await ethers.getContractFactory("token");
   const Token = await token.deploy();
-
+  const marketplace = await ethers.getContractFactory("marketplace");
+  const Marketplace = await marketplace.deploy(adr); // try to find whats correct argument
+  
   console.log("Token address:", Token.address);
+  console.log("Marketplace address:", Marketplace.address);
 }
 
 main()

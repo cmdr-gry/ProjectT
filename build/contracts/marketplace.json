@@ -14,8 +14,7 @@
     },
     {
       "stateMutability": "payable",
-      "type": "fallback",
-      "payable": true
+      "type": "fallback"
     },
     {
       "inputs": [
@@ -28,8 +27,7 @@
       "name": "buyTokens",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function",
-      "payable": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -6901,8 +6899,7 @@
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-11-24T18:50:40.850Z",
-  "networkType": "ethereum",
+  "updatedAt": "2022-11-27T09:43:37.069Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
